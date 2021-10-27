@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59bd8236-ccae-4d4b-9ebe-a55763a0056d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/profiles_api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles_api/models.py" afterDir="false" />
+    <list default="true" id="59bd8236-ccae-4d4b-9ebe-a55763a0056d" name="Changes" comment="&#10;Added profiles viewset">
+      <change beforePath="$PROJECT_DIR$/profiles_api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles_api/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,12 +103,35 @@
       <option name="presentableId" value="Default" />
       <updated>1634193532953</updated>
       <workItem from="1634193534148" duration="7279000" />
-      <workItem from="1635311312120" duration="7591000" />
+      <workItem from="1635311312120" duration="7893000" />
     </task>
+    <task id="LOCAL-00001" summary="&#10;Added profiles viewset">
+      <created>1635319676138</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1635319676138</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&#10;Added profiles viewset" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;Added profiles viewset" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/profiles_project$exc1.coverage" NAME="exc1 Coverage Results" MODIFIED="1634214597221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../ComputerNetworking/project" />
