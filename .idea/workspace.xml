@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59bd8236-ccae-4d4b-9ebe-a55763a0056d" name="Changes" comment="" />
+    <list default="true" id="59bd8236-ccae-4d4b-9ebe-a55763a0056d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/profiles_api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles_api/models.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1634193532953</updated>
       <workItem from="1634193534148" duration="7279000" />
-      <workItem from="1635311312120" duration="7264000" />
+      <workItem from="1635311312120" duration="7591000" />
     </task>
     <servers />
   </component>
