@@ -1,17 +1,17 @@
 from rest_framework import serializers
-from profiles_api import models
+from . import models
 
 
 class HelloSerializer(serializers.Serializer):
-    """Serializes a name field gor testing our APIView"""
-    # zamani az serilizer estefade mikonim ke khodeman field ha ra ejad konim
+    """Serializes a name field for testing our APIView"""
+    # We can do this by declaring serializers that work very similar to Django's forms.
     name = serializers.CharField(max_length=10)
 
 
 class UserProfileSerializer(serializers.ModelSerializer):
-    """Serializes a user profile object"""
+    """A Serializes a user profile object"""
 
-    # model_serializer use of self model
+    # model_serializer used of self model
 
     class Meta:
         model = models.UserProfile
@@ -25,12 +25,14 @@ class UserProfileSerializer(serializers.ModelSerializer):
         }
 
     def create(self, validated_data):
-        """Create and return a new user"""
+        """Create and return a new user."""
+        print('validated_data', validated_data)
         user = models.UserProfile.objects.create_user(
             email=validated_data['email'],
             name=validated_data['name'],
-            password=validated_data['password']
         )
+        user.set_password(validated_data['password'])
+        user.save()
         return user
 
 

@@ -1,18 +1,21 @@
 from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
+# status code
 from rest_framework import status
 from rest_framework import viewsets
+
 from rest_framework.authentication import TokenAuthentication
 from rest_framework import filters
+from rest_framework.authtoken.serializers import AuthTokenSerializer
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.settings import api_settings
 # from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from rest_framework.permissions import IsAuthenticated
 
-from profiles_api import serializers
-from profiles_api import models
-from profiles_api import permissions
+from . import serializers
+from . import models
+from . import permissions
 
 
 # Create your views here.
@@ -37,9 +40,10 @@ class HelloApiView(APIView):
     def post(self, request):
         """Create a hello message with our name"""
         serializer = self.serializer_class(data=request.data)
-
+        print('serializer', serializer)
         if serializer.is_valid():
-            name = serializer.validated_data.get('name')
+            # name = serializer.validated_data.get('name')
+            name = serializer.data.get('name')
             message = f'Hello {name}'
             return Response({'message': message})
         else:
@@ -48,9 +52,10 @@ class HelloApiView(APIView):
                 status=status.HTTP_400_BAD_REQUEST
             )
 
+    # put is used to update an object
     def put(self, request, pk=None):
         """Handle updating an object"""
-        return Response({'method': 'PATCH'})
+        return Response({'method': 'PUT'})
 
     def patch(self, request, pk=None):
         """Handle a partial update of an object"""
@@ -161,6 +166,15 @@ class UserProfileViewSet(viewsets.ModelViewSet):
     filter_backends = (filters.SearchFilter,)
     search_fields = ('name', 'email',)
 
+
+class LoginViewSet(viewsets.ViewSet):
+    """Check email and password and return an auth user"""
+    serializer_class = AuthTokenSerializer
+
+    def create(self, request):
+        """Use the ObtainAuthToken APIView to validate and create a token"""
+        # return ObtainAuthToken().post(request)  # ---> error
+        return ObtainAuthToken().as_view()(request=request._request)
 
 class UserLoginApiView(ObtainAuthToken):
     """Handle creating user authentication tokens"""

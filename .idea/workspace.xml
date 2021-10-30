@@ -7,12 +7,10 @@
     <list default="true" id="59bd8236-ccae-4d4b-9ebe-a55763a0056d" name="Changes" comment="&#10;Added profiles viewset">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles_api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles_api/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles_api/permissions.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles_api/permissions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profiles_api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles_api/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profiles_api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles_api/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profiles_api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles_api/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles_project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles_project/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +108,9 @@
       <option name="presentableId" value="Default" />
       <updated>1634193532953</updated>
       <workItem from="1634193534148" duration="7279000" />
-      <workItem from="1635311312120" duration="17769000" />
+      <workItem from="1635311312120" duration="18419000" />
+      <workItem from="1635513253751" duration="6826000" />
+      <workItem from="1635572127040" duration="4733000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;Added profiles viewset">
       <created>1635319676138</created>
@@ -135,6 +135,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&#10;Added profiles viewset" />
